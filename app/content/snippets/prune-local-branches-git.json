@@ -1,0 +1,17 @@
+{
+  "title": "Prune all local branches not on remote",
+  "description": "",
+  "instructions": "List out all local branches and attempt to delete any that aren't present on the remote and aren't unmerged.",
+  "code": "git branch -r | awk '{print $1}' | egrep -v -f \/dev\/fd\/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d",
+  "slug": "prune-local-branches-git",
+  "category": {
+     "id": 11,
+     "created_at": "-0001-11-30 00:00:00",
+     "updated_at": "-0001-11-30 00:00:00",
+     "title": "Git",
+     "description": "",
+     "slug": "git",
+     "type": "general",
+     "status": "active"
+  }
+}

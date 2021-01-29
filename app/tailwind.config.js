@@ -15,7 +15,10 @@ module.exports = {
           300: '#ccd9f8',
           200: '#dde6fb',
           100: '#eef2fd',
-        }
+        },
+        'primary-on': {
+          DEFAULT: '#fff',
+        },
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],

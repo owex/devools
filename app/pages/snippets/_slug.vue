@@ -1,6 +1,6 @@
 <template>
   <div class="container px-5">
-    <div class="w-2/3">
+    <div class="lg:w-2/3">
       <BreadCrumbs :crumbs="crumbs" />
       <Heading
         class="w-2/3"
@@ -12,7 +12,7 @@
         {{ snippet.category.title }}
       </p>
       <p class="font-bold">
-        Description
+        {{ snippet.description }}
       </p>
       <div class="mb-3" v-html="snippet.instructions"></div>
 
@@ -20,6 +20,9 @@
         Code
       </p>
       <prism language="bash">{{ snippet.code }}</prism>
+    </div>
+    <div class="lg:w-1/3">
+      <adsbygoogle />
     </div>
   </div>
 </template>
@@ -60,6 +63,23 @@
       const snippet = this.snippet;
       return {
         title: snippet.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: snippet.description
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            content: snippet.description
+          },
+          {
+            hid: 'og:title',
+            name: 'og:title',
+            content: snippet.title
+          },
+        ],
       }
     }
   });

@@ -22,7 +22,11 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/prism-vue-component'
+    '@/plugins/prism-vue-component',
+    {
+      src: './plugins/vue-gtag.js',
+      mode: 'client'
+    }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -57,8 +61,12 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/google-adsense',
   ],
+  'google-adsense': {
+    id: 'ca-pub-3529443987032959'
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

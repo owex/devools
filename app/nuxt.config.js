@@ -24,13 +24,8 @@ export default {
   plugins: [
     '@/plugins/prism-vue-component',
     {
-      src: './plugins/vue-gtag.js',
-      mode: 'client'
-    },
-    {
-      src: './plugins/vue-gtag.js',
-      mode: 'server'
-    },
+      src: './plugins/vue-gtag.js'
+    }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

@@ -3,6 +3,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   theme: {
     extend: {
+      minHeight: {
+        'screen-20': '20vh',
+        'screen-40': '40vh',
+        'screen-60': '60vh',
+        'screen-80': '80vh',
+      },
       colors: {
         primary: {
           DEFAULT: '#5680e9',

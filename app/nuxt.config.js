@@ -24,7 +24,12 @@ export default {
   plugins: [
     '@/plugins/prism-vue-component',
     {
-      src: './plugins/vue-gtag.js'
+      src: './plugins/vue-gtag.js',
+      mode: 'client'
+    },
+    {
+      src: './plugins/vue-gtag.js',
+      mode: 'server'
     },
   ],
 

@@ -5,5 +5,9 @@
     <Nuxt />
     </main>
     <SiteFooter />
+
+    <client-only>
+      <SiteGdpr />
+    </client-only>
   </div>
 </template>

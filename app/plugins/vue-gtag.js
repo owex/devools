@@ -2,12 +2,12 @@ import Vue from 'vue';
 import VueGtag from 'vue-gtag';
 
 if (process.browser) {
-  // const getGDPR = localStorage.getItem('GDPR:accepted');
+  const getGDPR = localStorage.getItem('GDPR:accepted');
 
   Vue.use(VueGtag, {
     config: { id: 'UA-31271352-1' },
-    // bootstrap: getGDPR === 'true',
+    bootstrap: getGDPR === 'true',
     appName: 'Devools',
-    // enabled: getGDPR === 'true',
+    enabled: getGDPR === 'true',
   });
 }

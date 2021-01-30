@@ -65,7 +65,9 @@ export default {
     '@nuxtjs/google-adsense',
   ],
   'google-adsense': {
-    id: 'ca-pub-3529443987032959'
+    id: 'ca-pub-3529443987032959',
+    pageLevelAds: true,
+    onPageLoad: true
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

@@ -21,9 +21,6 @@
       </p>
       <prism language="bash">{{ snippet.code }}</prism>
     </div>
-    <div class="lg:w-1/3">
-      <adsbygoogle />
-    </div>
   </div>
 </template>
 <script>
@@ -36,7 +33,7 @@
       }
     },
     async asyncData({ $content, params }) {
-      const url = `https://devools.com/api/snippets/${params.slug}`;
+      const url = `https://api.devools.com/api/snippets/${params.slug}`;
 
       const data = await fetch(url).then(res =>
         res.json()

@@ -92,7 +92,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    const url = 'https://devools.com/api/snippets';
+    const url = 'https://api.devools.com/api/snippets';
     const jsonData = await fetch(url).then((res) => res.json());
 
     this.snippets = jsonData.data.map((item: any) => {

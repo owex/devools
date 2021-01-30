@@ -5,11 +5,11 @@
     </div>
     <div class="lg:mx-8">
         <p>
-            Can I use cookies for analytics?
+          We use cookies for analytics.
         </p>
     </div>
     <div class="flex justify-center mt-4 lg:mt-0">
-        <button class="button ml-2 md:ml-0 cursor-pointer" @click="accept">Yes, sure</button>
+        <button class="button ml-2 md:ml-0 cursor-pointer" @click="accept">Ok Great</button>
         <button class="button md:ml-2 cursor-pointer" @click="deny">Nope</button>
     </div>
   </div>

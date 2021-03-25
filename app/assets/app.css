@@ -1,0 +1,12 @@
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.button {
+ @apply px-3 py-2  bg-primary text-primary-on
+}

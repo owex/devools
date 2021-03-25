@@ -1,0 +1,5 @@
+{
+  "title": "Tar a file/folder",
+  "description": "Tar a file/folder",
+  "code": "tar -zcvf filename.tar.gz foldername"
+}

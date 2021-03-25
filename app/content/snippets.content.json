@@ -1,0 +1,1073 @@
+[
+  {
+     "type": "snippets",
+     "id": "1",
+     "attributes": {
+        "title": "Visa (VISA)",
+        "description": "",
+        "instructions": "Visa (VISA)",
+        "code": "4929000000006",
+        "slug": "visa",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "2",
+     "attributes": {
+        "title": "MasterCard (MC)",
+        "description": "",
+        "instructions": "MasterCard (MC)",
+        "code": "5404000000000001",
+        "slug": "mastercard",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "3",
+     "attributes": {
+        "title": "Visa Debit \/ Delta",
+        "description": "",
+        "instructions": "Visa Debit \/ Delta (DELTA)",
+        "code": "4462000000000003",
+        "slug": "visa-electron",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "4",
+     "attributes": {
+        "title": "Solo (SOLO)",
+        "description": "",
+        "instructions": "Solo (SOLO)",
+        "code": "6334900000000005 - Issue 01",
+        "slug": "solo",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "5",
+     "attributes": {
+        "title": "UK Maestro \/ International Maestro (MAESTRO)",
+        "description": "",
+        "instructions": "UK Maestro \/ International Maestro (MAESTRO)",
+        "code": "5641820000000005  - Issue 01",
+        "slug": "uk-maestro-international",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "6",
+     "attributes": {
+        "title": "American Express (AMEX)",
+        "description": "",
+        "instructions": "American Express (AMEX)",
+        "code": "374200000000004",
+        "slug": "american-express",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "7",
+     "attributes": {
+        "title": "Visa Electron (UKE)",
+        "description": "",
+        "instructions": "Visa Electron (UKE)",
+        "code": "4917300000000008",
+        "slug": "visa-electron-uke",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "9",
+     "attributes": {
+        "title": "cUrl File",
+        "description": "",
+        "instructions": "Download file to location in Terminial using cURL",
+        "code": "curl -O www.devools.com\/examplefile.zip",
+        "slug": "curlfile",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "10",
+     "attributes": {
+        "title": "Tar a file\/folder",
+        "description": "Tar a file or folder on the command line",
+        "instructions": "Tar a file\/folder",
+        "code": "tar -zcvf filename.tar.gz foldername",
+        "slug": "tar-file-folder",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "11",
+     "attributes": {
+        "title": "Untar a file\/folder",
+        "description": "Untar a tar.gz folder in the same directory",
+        "instructions": "Untar a file\/folder",
+        "code": " tar xvf filename.tar.gz",
+        "slug": "untar-file-folder",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "12",
+     "attributes": {
+        "title": "Remove a directory and all sub directories",
+        "description": "",
+        "instructions": "Remove a directory and all sub directories",
+        "code": " rm -f -r foldername",
+        "slug": "rm-dir",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "13",
+     "attributes": {
+        "title": "Changing file\/folder ownership",
+        "description": "",
+        "instructions": "Changing file\/folder ownership",
+        "code": "chown user -R foldername",
+        "slug": "change-owner",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "14",
+     "attributes": {
+        "title": "Find large files",
+        "description": "",
+        "instructions": "Find large files",
+        "code": "find \/directory -type f -size + size k -exec  ls -lh {} \\; | awk '{ print $9 \": \" $5 }'",
+        "slug": "find-large-files",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "15",
+     "attributes": {
+        "title": "Creating a repo in svn",
+        "description": "Create and checkout a repo using svnadmin",
+        "instructions": "Create a repo in svn using svnadmin",
+        "code": "cd \/var\/www\/svn\nsvnadmin create reponame\nchown -R apache reponame\ncd \/var\/www\/html\/\nsvn co http:\/\/serverip\/svn\/reponame\n\n\/\/ optional centos apache setup\ncd \/etc\/httpd\/vhosts\/active\/\ncp othersite.conf reponame.conf\n\/etc\/init.d\/httpd configtest \/\/ ensure logs exist\n\/etc\/init.d\/httpd restart\n\t\t\t\t\t    ",
+        "slug": "create-repo",
+        "category": {
+           "id": 6,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "SVN",
+           "description": "",
+           "slug": "svn",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "16",
+     "attributes": {
+        "title": "Creating an ftp account",
+        "description": "",
+        "instructions": "Creating an ftp account",
+        "code": "su - \nadduser USERNAME \npasswd USERNAME\nusermod -d DirectoryPath USERNAME \nvi \/etc\/vsftpd\/chroot_list\n\/\/Add USERNAME to existing list",
+        "slug": "create-ftp-account",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "17",
+     "attributes": {
+        "title": "Canonical - Auto to WWW.",
+        "description": "",
+        "instructions": "Canonical - Auto add www.(to devools.com becomes www.devools.com)",
+        "code": "RewriteCond %{HTTP_HOST} !^www\\. \nRewriteRule ^(.*)$ http:\/\/www.%{HTTP_HOST}\/$1 [R=301,L]",
+        "slug": "canonical-to-www",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "18",
+     "attributes": {
+        "title": "Canonical - Strips Trailing Slashs",
+        "description": "",
+        "instructions": "Canonical - Strips Trailing Slashs",
+        "code": "RewriteCond %{REQUEST_FILENAME} !-d<br \/>\t\n# Externally redirect to remove trailing slash<br \/>\n\t\t\t\t\t\tRewriteRule ^(.+)\/$ \/$1 [R=301,L]<br \/>\n\t\t\t\t\t      ",
+        "slug": "canonical-strip-trailing-slashs",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "19",
+     "attributes": {
+        "title": "Update host files on a mac",
+        "description": "",
+        "instructions": "Update host files on a mac",
+        "code": "sudo nano \/private\/etc\/hosts",
+        "slug": "update-host-file-on-mac",
+        "category": {
+           "id": 18,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Terminal",
+           "description": "",
+           "slug": "terminal",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "20",
+     "attributes": {
+        "title": "Flush Local DNS on Mac",
+        "description": "",
+        "instructions": "\n<p>\nFlush the DNS cach for the following Mac OS'sOS X Yosemite<\/strong><br \/>\nUse the following Terminal command to reset the DNS cache: <br \/>\nsudo discoveryutil mdnsflushcache\n<\/p>\n<strong>OS X Mavericks, Mountain Lion, and Lion<\/strong><br \/>\nUse the ",
+        "code": "\/\/Mac OS X v10.6\ndscacheutil -flushcache\n\n\/\/OS X Mavericks, Mountain Lion, and Lion\nsudo killall -HUP mDNSResponder\n\n\/\/OS X Yosemite\nsudo discoveryutil mdnsflushcache",
+        "slug": "flush-dns-on-mac",
+        "category": {
+           "id": 18,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Terminal",
+           "description": "",
+           "slug": "terminal",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "23",
+     "attributes": {
+        "title": "Copy a trunk to branch",
+        "description": "Create a copy of a svn branch",
+        "instructions": "Create a copy of a svn branch",
+        "code": "svn copy trunk\/ file:\/\/\/var\/www\/svn\/nameofsite\/branchname -m \"your branchname\"\n",
+        "slug": "copy-svn-trunk",
+        "category": {
+           "id": 6,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "SVN",
+           "description": "",
+           "slug": "svn",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "24",
+     "attributes": {
+        "title": "Match last word after delimiter",
+        "description": "",
+        "instructions": "Match last word after delimiter",
+        "code": ".*DELIMITER(.*)",
+        "slug": "match-last-word-delimter",
+        "category": {
+           "id": 23,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Regular Expression",
+           "description": "",
+           "slug": "regular-expression",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "25",
+     "attributes": {
+        "title": "Clear Google PageSpeedMod Cache",
+        "description": "",
+        "instructions": "Clear Google PageSpeedMod Cache",
+        "code": "touch \/var\/cache\/mod_pagespeed\/cache.flush",
+        "slug": "clear-google-pagespeed-mod-cache",
+        "category": {
+           "id": 18,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Terminal",
+           "description": "",
+           "slug": "terminal",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "27",
+     "attributes": {
+        "title": "FTP setup commands",
+        "description": "",
+        "instructions": "Setup up FTP",
+        "code": "FTP SETUP COMMANDS\nservice iptables stop\nvi \/etc\/sysconfig\/iptables\n-A INPUT -m state --state NEW -m tcp -p tcp --dport 21 -j ACCEPT\nservice iptables start\nvi \/etc\/vsftpd\/vsftpd.conf\nanonymous_enable=NO\nascii_upload_enable=YES\nascii_download_enable=YES\nservice vsftpd restart\nuseradd username\npasswd chosenpassword\nusermod -d \/ username\n\n\n\n",
+        "slug": "ftp-setup",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "35",
+     "attributes": {
+        "title": "chmod recursive directories only",
+        "description": "",
+        "instructions": "chmod recursively to directories only, adjust -type d to -type f to target files exclusively",
+        "code": "find \/DIRECTORY -type d -exec chmod 755 {} \\;",
+        "slug": "chmod-directories",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "36",
+     "attributes": {
+        "title": "chmod recursively files only",
+        "description": "",
+        "instructions": "chmod recursively to directories only, adjust -type d to -type f to target files exclusively",
+        "code": "find \/DIRECTORY -type d -exec chmod 755 {} \\;",
+        "slug": "chmod-directories",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "37",
+     "attributes": {
+        "title": "Using Border-box",
+        "description": "",
+        "instructions": "Setting box-sizing to border-box brings padding and border values within the width specified, gone are the days of doing the maths, relax border-box has you covered. IE8+",
+        "code": "*, *:before, *:after {\n  -moz-box-sizing: border-box; \n-webkit-box-sizing: border-box;\n box-sizing: border-box;\n}",
+        "slug": "box-sizing-border-box",
+        "category": {
+           "id": 10,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "CSS",
+           "description": "",
+           "slug": "css",
+           "type": "frontend",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "38",
+     "attributes": {
+        "title": "YouTube Video XML using oembed",
+        "description": "",
+        "instructions": "Use oembed to pull an xml of a YouTube video using its URL. Using simplexml_load_file you are able to convert the XML into an object for use.\n\n",
+        "code": "<?php  \n$video_url = '';\n$info = simplexml_load_file(\"http:\/\/www.youtube.com\/oembed?url=\" . $video_url . \"&format=xml\");\n$title = $info->title; \n ?>",
+        "slug": "youtube-xml-oembed",
+        "category": {
+           "id": 8,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "PHP",
+           "description": "",
+           "slug": "php",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "39",
+     "attributes": {
+        "title": "Vimeo Video XML using oembed",
+        "description": "",
+        "instructions": "Use oembed to pull an xml of a specific video using its URL.",
+        "code": " $info = simplexml_load_file(\"http:\/\/www.youtube.com\/oembed?url=URL&format=xml\"); ",
+        "slug": "vimeo-xml-oembed",
+        "category": {
+           "id": 8,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "PHP",
+           "description": "",
+           "slug": "php",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "40",
+     "attributes": {
+        "title": "JQuery Toggle Button",
+        "description": "",
+        "instructions": "<p>Button that toggles UI animation<\/p>",
+        "code": "$(function() {\r\n  $(\"#left_pane\").css(\"left\",\"-300px\");\r\n  $(\"#middle_pane\").css(\"left\",\"0px\");\r\n\r\n  $(\".toggle_right_pane\").toggle(function() {       \r\n      $('#left_pane').animate({ left: '0' }, 500);\r\n      $('#main_pane').animate({ left: '300' }, 500);\r\n  }, function() {       \r\n      $('#left_pane').animate({ left: '-300' }, 500);\r\n      $('#main_pane').animate({ left: '0' }, 500);\r\n  });\r\n});\r\n\r\n\r\n    <div id=\"container\">\r\n\r\n        <div id=\"left_pane\">\r\n        menu\r\n        <\/div>\r\n\r\n\r\n        <div id=\"main_pane\">\r\n            <a class=\"toggle_right_pane\" href=\"#\">show\/hide<\/a>\r\n        <\/div>\r\n\r\n    <\/div>\r\n    \r\n    \r\n    body{\r\n    margin: 0;\r\n}\r\n\r\n#left_pane{\r\n    float:left;\r\n    display:block;\r\n    width: 300px;\r\n    height: 100%;\r\n    overflow:hidden;\r\n    background: grey;\r\n    position:absolute;\r\n    z-index:1\r\n}\r\n\r\n#main_pane{\r\n    float:left;\r\n    height:100%;\r\n    left:0px;\r\n    overflow:scroll;\r\n    position:absolute;\r\n    background: red;        \r\n    right:0;\r\n}\r\n",
+        "slug": "jquery-toggle-button-0",
+        "category": {
+           "id": 7,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "jQuery",
+           "description": "",
+           "slug": "jquery",
+           "type": "frontend\n",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "42",
+     "attributes": {
+        "title": "Install Git on CentOS 5",
+        "description": "",
+        "instructions": "<p>Install git on CENTOS 5<\/p>",
+        "code": "Install the dependencies\r\n----------------------------\r\nyum install gettext-devel expat-devel curl-devel zlib-devel openssl-devel\r\n\r\nGet the git source code\r\n----------------------------\r\nwget http:\/\/codemonkey.org.uk\/projects\/git-snapshots\/git\/git-latest.tar.gz\r\n\r\n\r\nuntar the git source code\r\n----------------------------\r\ntar xvfz git-1.6.1.tar.gz\r\n\r\nInstall\r\n----------------------------\r\ncd git-1.6.1.tar.gz\r\n\r\nmake prefix=\/usr\/local all\r\n\r\nmake prefix=\/usr\/local install",
+        "slug": "install-git-on-centos-0",
+        "category": {
+           "id": 11,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Git",
+           "description": "",
+           "slug": "git",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "43",
+     "attributes": {
+        "title": "Foreach loop with Bash",
+        "description": "",
+        "instructions": "<p>Loops around a directory and&nbsp;echos each folder.<\/p>\r\n<p>&nbsp;<\/p>",
+        "code": "#!\/bin\/bash\r\n\r\ncd \/var\/www\/vhosts\r\n\r\nfor i in $( ls ); do\r\n   echo $i\r\ndone",
+        "slug": "foreach-loop-with-bash-0",
+        "category": {
+           "id": 18,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Terminal",
+           "description": "",
+           "slug": "terminal",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "44",
+     "attributes": {
+        "title": "Create a DB user",
+        "description": "",
+        "instructions": "<p>Creates a mySQL user called username with a password of password<\/p>",
+        "code": "\r\nCREATE USER 'username'@'%' IDENTIFIED BY 'password';",
+        "slug": "create-a-db-user-0",
+        "category": {
+           "id": 16,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "MySQL",
+           "description": "",
+           "slug": "mysql",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "45",
+     "attributes": {
+        "title": "User Creation and Deletion and add them to sudoers and a custom linux user group",
+        "description": "",
+        "instructions": "<p>Add and remove a user on a linux server set the password and add them to the list of sudoers.&nbsp;<\/p>\r\n<p>&nbsp;<\/p>\r\n<p>The 'psaserv'&nbsp;group is for plesk so the user can have access to the plesk files<\/p>",
+        "code": "User Creation and Deletion\r\n\r\nAdding users\r\nTo add a user to a linux server, set the password, add them to the psaserv group, and also add them to the list of sudoers use the following commands below.\r\n$ useradd johndoe\r\n$ passwd johndoe(input password twice)\r\n$ vi \/etc\/group (add new user onto end of psaserv line\r\n$ vi \/etc\/sudoers (add following below similar entries:)\r\njohndoe ALL=(ALL) ALL\r\n\r\nRemoval\r\nTo remove a user called johndoe you can see if one exists by using cat, then delete the user, and use cat again to see if the user is removed.\r\n$ cat \/etc\/passwd | grep -i johndoe\r\njohndoe:x:10285:10285::\/home\/johndoe:\/bin\/bash\r\n$ userdel johndoe\r\n$ cat \/etc\/passwd | grep -i johndoe\r\n",
+        "slug": "user-creation-and-deletion-and-add-them-to-sudoers-and-a-custom-linux-user-group-0",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "46",
+     "attributes": {
+        "title": "Rename File extensions",
+        "description": "",
+        "instructions": "<p>bash script to rename file extensions<\/p>",
+        "code": "# change .htm files to .html\r\nfor file in *.htm ; do mv $file `echo $file | sed 's\/\\(.*\\.\\)htm\/\\1html\/'` ; done\r\n\r\n# change .html files to .htm\r\nfor file in *.html ; do mv $file `echo $file | sed 's\/\\(.*\\.\\)html\/\\1htm\/'` ; done\r\n\r\n#change .html files to .shtml\r\nfor file in *.html ; do mv $file `echo $file | sed 's\/\\(.*\\.\\)html\/\\1shtml\/'` ; done\r\n\r\n#change .html files to php\r\nfor file in *.html ; do mv $file `echo $file | sed 's\/\\(.*\\.\\)html\/\\1php\/'` ; done\r\n\r\n# change .JPG files to .jpg\r\nfor file in *.JPG ; do mv $file `echo $file | sed 's\/\\(.*\\.\\)JPG \/\\1jpg\/'` ; done",
+        "slug": "rename-file-extensions-0",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "49",
+     "attributes": {
+        "title": "Using jQuery to target=blank ",
+        "description": "",
+        "instructions": "<p><span style=\"color: rgb(51, 51, 51); font-family: monospace; font-size: 16px; line-height: 25px;\">Replicate the target=\"_blank\" attribute with this HTML5 valid example in jQuery<\/span><\/p>\r\n<p>&nbsp;<\/p>",
+        "code": "$('a[data-rel*=external]').click( function() {\r\nwindow.open(this.href);\r\nreturn false;\r\n});",
+        "slug": "using-jquery-to-targetblank--0",
+        "category": {
+           "id": 7,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "jQuery",
+           "description": "",
+           "slug": "jquery",
+           "type": "frontend\n",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "50",
+     "attributes": {
+        "title": "jQuery test if element exists",
+        "description": "",
+        "instructions": "<p>This is a small plugin for jQuery to test if an element exists in the DOM.&nbsp;<\/p>",
+        "code": "$('selector').doesExist();\r\n\r\n\/* return true|false if an element exists *\/\r\njQuery.fn.doesExist=function(){return jQuery(this).length>0;};",
+        "slug": "jquery-test-if-element-exists-0",
+        "category": {
+           "id": 7,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "jQuery",
+           "description": "",
+           "slug": "jquery",
+           "type": "frontend\n",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "51",
+     "attributes": {
+        "title": "Enable GZIP compression",
+        "description": "Compress assets using GZIP",
+        "instructions": "<p>Enable GZIP file compression for  *.css, *.js, *.html, *.xml and your RSS file types, follow the pattern below to add additonal mime types.<\/p>",
+        "code": "## ENABLE GZIP COMPRESSION ##\r\nAddOutputFilterByType DEFLATE text\/plain\r\nAddOutputFilterByType DEFLATE text\/html\r\nAddOutputFilterByType DEFLATE text\/xml\r\nAddOutputFilterByType DEFLATE text\/css\r\nAddOutputFilterByType DEFLATE application\/xml\r\nAddOutputFilterByType DEFLATE application\/xhtml+xml\r\nAddOutputFilterByType DEFLATE application\/rss+xml\r\nAddOutputFilterByType DEFLATE application\/javascript\r\nAddOutputFilterByType DEFLATE application\/x-javascript\r\n## ENABLE GZIP COMPRESSION ##",
+        "slug": "enable-gzip-compression-0",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "52",
+     "attributes": {
+        "title": "Leverage Browser Caching",
+        "description": "Cache frontend assets ",
+        "instructions": "<p>Set cache header for frontend files. I usually add this code&nbsp;once the website is online.<\/p>",
+        "code": "## LEVERAGE BROWSER CACHING ##\r\n<IfModule mod_expires.c>\r\nExpiresActive On\r\nExpiresByType image\/jpg \"access 1 week\"\r\nExpiresByType image\/jpeg \"access 1 week\"\r\nExpiresByType image\/gif \"access 1 week\"\r\nExpiresByType image\/png \"access 1 week\"\r\nExpiresDefault \"access 7 days\"\r\n<\/IfModule>\r\n \r\n## Fonts caching for a year\r\n<FilesMatch \"\\.(eot|svg|ttf|woff)$\">\r\nHeader set Cache-Control \"max-age=29030400, public\"\r\n<\/FilesMatch>\r\n \r\n## Cache Icon, PDF and Flash movie for a year\r\n<FilesMatch \"\\.(ico|pdf|flv|swf)$\">\r\nHeader set Cache-Control \"max-age=29030400, public\"\r\n<\/FilesMatch>\r\n \r\n## Cache CSS and JS for 1 week\r\n<FilesMatch \"\\.(xml|txt|css|js)$\">\r\nHeader set Cache-Control \"max-age=604800, proxy-revalidate\"\r\n<\/FilesMatch>\r\n \r\n## LEVERAGE BROWSER CACHING ##",
+        "slug": "leverage-browser-caching-0",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "54",
+     "attributes": {
+        "title": "Font smoothing",
+        "description": "",
+        "instructions": "<p>-webkit-font-smoothing: antialiased; is the webkit feature that smooths out custom fonts keeping them tidy and clean, you can also use subpixel-antialiased as an alternative to antialiased.<\/p>\n\n<p>Although until recently webkit was the only CSS feature to allow this firefox have released their own version and this comes in as -moz-osx-font-smoothing: grayscale; as of Firefox 25<\/p>\n",
+        "code": "-webkit-font-smoothing: antialiased;\r\n-moz-osx-font-smoothing: grayscale; \/* Firefox 25*\/",
+        "slug": "font-smoothing",
+        "category": {
+           "id": 10,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "CSS",
+           "description": "",
+           "slug": "css",
+           "type": "frontend",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "55",
+     "attributes": {
+        "title": "Select a jQuery UI tab by link",
+        "description": "",
+        "instructions": "<p>It will often be the case that you will need to trigger a&nbsp;jQuery UI tab from a bespoke link.<\/p>\r\n<p>This can be done using following the formats listed below:&nbsp;<\/p>",
+        "code": "\/\/Latest jQuery UI\r\n\r\n$(selector).tabs('option', 'active' ,0);\r\n\r\n\/\/Older jQuery UI \r\n\r\n$(selector).tabs('select',0);\r\n\r\n\/\/ Example\r\n\r\n<button type=\"button\" class=\"btn btn-default\" data-tab=\"0\">Tab 1<\/button>\r\n\r\n$('[data-tab]').click(function(){\r\n\r\n        var tabId = $(this).data('tab');\r\n\r\n        \/\/alert(tabId);\r\n\r\n        jQueryTabs.tabs('option', 'active', tabId);\r\n\r\n        \/\/jQueryTabs.tabs('\"select', tabId);  \/\/older version of jQuiry UI\r\n\r\n        return false;\r\n\r\n});\r\n\r\n",
+        "slug": "select-a-jquery-ui-tab-by-link-0",
+        "category": {
+           "id": 7,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "jQuery",
+           "description": "",
+           "slug": "jquery",
+           "type": "frontend\n",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "56",
+     "attributes": {
+        "title": "SSH Keep Alive",
+        "description": "Reduce ssh timeouts",
+        "instructions": "<p>Create a config file within the ssh folder and configure with the settings below to greatly reduce the number of time outs.<\/p>\r\n<p>&nbsp;<\/p>\r\n<p>ServerAliveInterval 30<br \/>ServerAliveCountMax 36<\/p>",
+        "code": "cd ~\/.ssh\/\r\nnano config\r\n\r\nServerAliveInterval 30\r\nServerAliveCountMax 36",
+        "slug": "ssh-keep-alive-0",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "58",
+     "attributes": {
+        "title": "Clockwise and anticlockwise spin in CSS keyframes",
+        "description": "Feel like spinning an element? ",
+        "instructions": "<p>Using keyframes you can spin an element with this handy CSS animation, go clockwise\/anticlockwise or mash it up and change those values to suit your project.<\/p>\r\n",
+        "code": "-webkit-animation: antiClockwiseSpin 10s infinite linear;\nanimation: antiClockwiseSpin 10s infinite linear;\r\n\r\n\r\n@keyframes antiClockwiseSpin {\r\n\t0%  {transform: rotate(360deg);}\r\n\t100% {transform: rotate(0deg);}\t\r\n}\r\n\r\n@keyframes antiClockwiseSpin {\r\n\t0%  {transform: rotate(360deg);}\r\n\t100% {transform: rotate(0deg);}\t\r\n}\r\n\r\n\r\n\/* Prefixed using http:\/\/pleeease.io\/play\/ *\/\n\n-webkit-animation: clockwiseSpin 10s infinite linear;\nanimation: clockwiseSpin 10s infinite linear;\n\r\n\r\n@-webkit-keyframes clockwiseSpin {\r\n\t0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}\r\n\t100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}\r\n    \r\n}@keyframes clockwiseSpin {\r\n\t0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}\r\n\t100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}\t\r\n}",
+        "slug": "clockwise-and-anticlockwise-spin-in-css-keyframes-0",
+        "category": {
+           "id": 10,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "CSS",
+           "description": "",
+           "slug": "css",
+           "type": "frontend",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "60",
+     "attributes": {
+        "title": "FirstData credit card",
+        "description": "Visa card deatails for payment testing first data.",
+        "instructions": "<p>Visa card deatails for payment testing first data.<\/p>\r\n<p>4035874000424977<\/p>",
+        "code": "Visa\r\n4035874000424977",
+        "slug": "firstdata-credit-card-0",
+        "category": {
+           "id": 2,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Sagepay",
+           "description": "Sagepay Testcards",
+           "slug": "sagepay",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "61",
+     "attributes": {
+        "title": "Find website IP in Terminial",
+        "description": "Quickly find the IP address of any website via Terminial",
+        "instructions": "<p>Quickly find the IP address of any website via Terminial on a Mac using the nslookup command.<\/p>\r\n<p>Quick and simple.<\/p>\r\n<p>&nbsp;<\/p>\r\n<p><strong>Command<\/strong>:<\/p>\r\n<p>nslookup www.google.com<\/p>\r\n<p><strong>Result<\/strong>:<\/p>\r\n<p>Server:&nb",
+        "code": "nslookup www.google.com",
+        "slug": "find-website-ip-in-terminial",
+        "category": {
+           "id": 18,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Terminal",
+           "description": "",
+           "slug": "terminal",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "62",
+     "attributes": {
+        "title": "Custom fonts not rendering",
+        "description": "Allow font file types. to be served by apache ",
+        "instructions": "<p>If you find you are having trouble rendering boostrap glythicons or font-awesome then its possible your service isn't allowing access for the font file types, this snippet should open up this access in apache, insert into your .htaccess file or apache ",
+        "code": "<FilesMatch \"\\.(ttf|otf|eot|woff)$\">\r\n  <IfModule mod_headers.c>\r\n    Header set Access-Control-Allow-Origin \"*\"\r\n  <\/IfModule>\r\n<\/FilesMatch>",
+        "slug": "custom-fonts-not-rendering-0",
+        "category": {
+           "id": 32,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Apache",
+           "description": "",
+           "slug": "apache",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "63",
+     "attributes": {
+        "title": "XAMPP MySQL start from command",
+        "description": "Start mysql server if the XAMPP application is unable to force it",
+        "instructions": "<p>This command will start the mysql server if the XAMPP application is unable to force it.<\/p>",
+        "code": "sudo \/Applications\/XAMPP\/xamppfiles\/bin\/mysql.server start\r\n",
+        "slug": "xampp-mysql-start-from-command-0",
+        "category": {
+           "id": 16,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "MySQL",
+           "description": "",
+           "slug": "mysql",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "64",
+     "attributes": {
+        "title": "Background Colour Slide",
+        "description": "Shift a colour left to right, or right to left. ",
+        "instructions": "Shift a colour left to right, or right to left. ",
+        "code": "",
+        "slug": "background-colour-slide-0",
+        "category": {
+           "id": 10,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "CSS",
+           "description": "",
+           "slug": "css",
+           "type": "frontend",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "65",
+     "attributes": {
+        "title": "Restore Google Chrome Light Skin on MacOS",
+        "description": "Restore Google Chrome Light Skin on MacOS Dark Mode.",
+        "instructions": "<p>When using Google Chrome on a Mac in Dark Mode, Chrome defaults to a dark theme, to restore Chrome to its light theme Open Terminal and run the command below, restart Chrome and the default skin will be stored. <\/p>",
+        "code": "defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool yes",
+        "slug": "restore-google-chrome-light-skin-on-macos-dark-mode",
+        "category": {
+           "id": 38,
+           "created_at": null,
+           "updated_at": null,
+           "title": "Chrome",
+           "description": "",
+           "slug": "chrome",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "66",
+     "attributes": {
+        "title": "Dump MYSQL database to file using mysqldump",
+        "description": "",
+        "instructions": "Run this command on replacing the USERNAME and DATABASENAME with your respective mysql username and database name, this will prompt you for your mysql users password and subsequently produce a .sql file at your current location",
+        "code": "mysqldump -u USERNAME -p DBNAME > DBNAME.export.sql",
+        "slug": "dump-mysql-database-to-sql",
+        "category": {
+           "id": 16,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "MySQL",
+           "description": "",
+           "slug": "mysql",
+           "type": "serverside",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "68",
+     "attributes": {
+        "title": "Copy SSH Public key to clipboard",
+        "description": "",
+        "instructions": "",
+        "code": "pbcopy < ~\/.ssh\/id_rsa.pub",
+        "slug": "copy-ssh-public-key",
+        "category": {
+           "id": 5,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Bash \/ Linux Commands",
+           "description": "",
+           "slug": "bash",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  },
+  {
+     "type": "snippets",
+     "id": "69",
+     "attributes": {
+        "title": "Prune all local branches not on remote",
+        "description": "",
+        "instructions": "List out all local branches and attempt to delete any that aren't present on the remote and aren't unmerged.",
+        "code": "git branch -r | awk '{print $1}' | egrep -v -f \/dev\/fd\/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d",
+        "slug": "prune-local-branches-git",
+        "category": {
+           "id": 11,
+           "created_at": "-0001-11-30 00:00:00",
+           "updated_at": "-0001-11-30 00:00:00",
+           "title": "Git",
+           "description": "",
+           "slug": "git",
+           "type": "general",
+           "status": "active"
+        }
+     }
+  }
+]

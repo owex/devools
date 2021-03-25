@@ -1,4 +1,4 @@
-# devools-nuxt
+# Devools
 
 ## Build Setup
 

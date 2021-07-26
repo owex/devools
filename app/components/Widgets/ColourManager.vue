@@ -63,19 +63,33 @@
     </div>
     <div class="mt-2">
       <p class="text-xs font-bold">
+        Palette
+      </p>
+      <div class="flex flex-wrap">
+        <div
+          v-for="(colour, index) in this.palette"
+          :key="index"
+          :style="{ backgroundColor: colour, width: '10%', height: '50px' }"
+          class="flex flex-col justify-center items-center"
+        >
+          <div class="text-xs">{{colour}}</div>
+        </div>
+      </div>
+      <p class="text-xs font-bold">
         Tints &amp; Shades
       </p>
       <div class="flex flex-wrap" v-for="(palette, name) in palettes" :key="name">
         <div
           v-for="(colour, index) in palette"
           :key="index"
-          :style="{ backgroundColor: colour, width: '9.09%', height: '50px' }"
+          :style="{ backgroundColor: colour, width: '10%', height: '50px' }"
           class="flex flex-col justify-center items-center"
           :class="{'text-white': name === 'shades'}"
         >
           <div class="text-xs">{{colour}}</div>
         </div>
       </div>
+
       <Button class="mt-3" @click="tailwind.enable = !tailwind.enable" :active="this.tailwind.enable">
         Export Palette Configs for Tailwind
       </Button>
@@ -83,12 +97,18 @@
         Export Palette Configs for Sass
       </Button>
       <div class="flex flex-wrap mt-1" v-if="tailwind.enable || sass.enable">
-        <div class="w-full lg:w-1/2">
-          <prism language="javascript" v-if="tailwind.enable">{{ tailwind.tintsCode }}</prism>
-          <prism language="sass" v-if="sass.enable">{{ sass.tintsCode }}</prism>
+        <div class="w-full">
+          <prism language="javascript" v-if="tailwind.enable">{{ tailwind.default }}</prism>
         </div>
         <div class="w-full lg:w-1/2">
-          <prism language="javascript" v-if="tailwind.enable">{{ tailwind.shadesCode }}</prism>
+          <p>Tints</p>
+          <prism language="javascript" v-if="tailwind.enable">{{ tailwind.tints }}</prism>
+          <prism language="sass" v-if="sass.enable">{{ sass.tintsCode }}</prism>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+          <p>Shades</p>
+          <prism language="javascript" v-if="tailwind.enable">{{ tailwind.shades }}</prism>
           <prism language="sass" v-if="sass.enable">{{ sass.shadesCode }}</prism>
         </div>
         <a class="w-full text-xs text-gray-500 text-right" href="https://tailwindcss.com/docs/customizing-colors" rel="nofollow" target="_blank">Learn more</a>
@@ -114,8 +134,9 @@ interface PalettesTypes {
 
 interface TailwindTypes {
   enable: boolean,
-  tintsCode: string,
-  shadesCode: string
+  default: string,
+  tints: string,
+  shades: string
 }
 
 interface SassTypes {
@@ -131,6 +152,7 @@ interface ColourManagerTypes {
   hex: HexTypes,
   rgba: string,
   palettes: PalettesTypes,
+  palette: Array<string>,
   tailwind: TailwindTypes,
   sass: SassTypes,
 }
@@ -163,10 +185,12 @@ export default Vue.extend({
         tints: [],
         shades: [],
       },
+      palette: [],
       tailwind: {
         enable: false,
-        tintsCode: '',
-        shadesCode: '',
+        default: '',
+        tints: '',
+        shades: '',
       },
       sass: {
         enable: false,
@@ -214,6 +238,11 @@ export default Vue.extend({
         this.palettes.tints = this.getShadesOrTint('tints', r, g, b);
         this.palettes.shades = this.getShadesOrTint('shades', r, g, b);
 
+        const tints = this.palettes.tints.slice(Math.max(this.palettes.tints.length - 5, 1))
+        const shades = this.palettes.shades.slice(Math.max(this.palettes.shades.length - 5, 1))
+
+        this.palette = tints.concat(shades.reverse());
+
         const opacity: string = this.opacity !== 1 ? `, ${this.opacity}` : '';
         return `rgba(${r}, ${g}, ${b}${opacity})`;
       }
@@ -246,7 +275,7 @@ export default Vue.extend({
     getShadesOrTint(type: string, r: number, g: number, b: number): Array<string> {
       const colours: Array<string> = [];
 
-      for (let i = 0; i < 11; i++) {
+      for (let i = 0; i < 10; i++) {
         let rgb = [];
         rgb.push(this.getChannelTintOrShade(type, r, i));
         rgb.push(this.getChannelTintOrShade(type, g, i));
@@ -263,8 +292,9 @@ export default Vue.extend({
       return type === 'tints' ? colours.reverse() : colours;
     },
     setTailwindExport() {
-      this.tailwind.shadesCode = this.exportPaletteForTailwind(this.palettes.tints, 'shades');
-      this.tailwind.tintsCode = this.exportPaletteForTailwind(this.palettes.shades, 'tints');
+      this.tailwind.default = this.exportDefaultPaletteForTailwind();
+      this.tailwind.shades = this.exportPaletteForTailwind(this.palettes.tints, 'shades');
+      this.tailwind.tints = this.exportPaletteForTailwind(this.palettes.shades, 'tints');
 
       this.sass.shadesCode = this.exportPaletteForSass(this.palettes.tints, 'shades');
       this.sass.tintsCode = this.exportPaletteForSass(this.palettes.shades, 'tints');
@@ -292,6 +322,26 @@ export default Vue.extend({
     /**
      * Return formatted string for tailwind
      *
+     * @return  {string}
+     */
+    exportDefaultPaletteForTailwind() : string {
+
+      let code = `'${this.hex.colorName.replace(/\s+/g, '-').toLowerCase() ?? 'colorName'}': {\n`;
+      let labelIndex = 100;
+      const defaultHex = this.hex.value !== '' ? this.hex.value : this.hex.default;
+      code += `\tDEFAULT: '#${defaultHex.replace('#', '')}', \mn`;
+
+      this.palette.forEach((hex, index) => {
+        code += `\t'${labelIndex}': '${hex}', \n`;
+        labelIndex+=100;
+      });
+
+      code += `},`;
+      return code;
+    },
+        /**
+     * Return formatted string for tailwind
+     *
      * @param   {Array<object>}  palette
      * @param   {string}  name
      *
@@ -301,7 +351,7 @@ export default Vue.extend({
       let code = `'${this.hex.colorName.replace(/\s+/g, '-').toLowerCase() ?? 'colorName'}': {\n`;
         palette.reverse().forEach((hex, index) => {
           const formattedLabel = (10 - index) * 100;
-          const label = index === 0 ? 'default' : `'${formattedLabel}'`;
+          const label = index === 0 ? 'DEFAULT' : `'${formattedLabel}'`;
           if (formattedLabel !== 0) {
             code += `\t${label}: '${hex}', \n`
           }

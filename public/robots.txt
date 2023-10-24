@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://devools.com
+
+# Sitemaps
+Sitemap: https://devools.com/sitemap.xml

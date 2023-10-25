@@ -1,5 +1,5 @@
 import './globals.css';
-import './prism.css';
+// import './prism.css';
 
 import React from 'react';
 import Script from 'next/script';
@@ -44,7 +44,6 @@ const Layout = ({ children }) => {
       <body className="bg-white dark:bg-gray-900 text-black dark:text-gray-100">
         <div className="flex flex-col min-h-screen justify-between">
           <Header />
-          site_url: {site_url}
           {children}
           <Footer />
         </div>

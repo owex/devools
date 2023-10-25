@@ -5,6 +5,46 @@ import classNames from 'classnames';
 
 import { types } from '@/utils/snippets';
 
+
+const friendlyCategoryNames = {
+  apache: 'Apache Web Server',
+  bash: 'Bash Shell',
+  browser: 'Web Browser',
+  chrome: 'Google Chrome',
+  cli: 'Command Line Interface (CLI)',
+  composer: 'Composer',
+  compression: 'Data Compression',
+  css: 'CSS',
+  curl: 'cURL',
+  database: 'Database',
+  'dependency management': 'Dependency Management',
+  docker: 'Docker (Containerization Platform)',
+  'file-transfer': 'File Transfer',
+  firefox: 'Mozilla Firefox',
+  ftp: 'File Transfer Protocol (FTP)',
+  git: 'Git',
+  google: 'Google',
+  htaccess: '.htaccess',
+  jquery: 'jQuery',
+  linux: 'Linux',
+  macos: 'macOS',
+  mysql: 'MySQL',
+  pagespeed: 'PageSpeed Optimization',
+  php: 'PHP',
+  plugin: 'Plugin',
+  regex: 'Regex',
+  sql: 'Structured Query Language (SQL)',
+  ssh: 'Secure Shell (SSH)',
+  svn: 'Subversion (Version Control System)',
+  tar: 'tar (Archiving Utility)',
+  unix: 'Unix Operating System',
+  'version control': 'Version Control',
+  vimeo: 'Vimeo (Video Sharing Platform)',
+  vsftpd: 'vsftpd (Very Secure FTP Daemon)',
+  web: 'Web',
+  youtube: 'YouTube (Video Sharing Platform)',
+};
+
 const statuses = {
   cli: 'text-green-700 bg-green-50 ring-green-600/20',
 };
@@ -43,7 +83,7 @@ const SnippetsPage = ({ data = [] }) => {
                 onClick={() => setType(item)}
                 className="w-full text-left"
               >
-                {item}
+                {friendlyCategoryNames[item] || item}
               </button>
             </li>
           ))}
@@ -58,11 +98,14 @@ const SnippetsPage = ({ data = [] }) => {
             <div className="min-w-full">
               <a className="flex items-start gap-x-3" href={item.href}>
                 <p className="text-sm font-semibold leading-6">{item.title}</p>
-                {item.type && (
-                  <p className="rounded-md whitespace-nowrap mt-0.5 px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset'">
-                    {item.type}
+                {[...(item?.categories || [])].map((category) => (
+                  <p
+                    className="rounded-md whitespace-nowrap mt-0.5 px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset'"
+                    key={`id-${item.id}-category${category}`}
+                  >
+                    {category}
                   </p>
-                )}
+                ))}
               </a>
               <div>{item.description}</div>
             </div>

@@ -4,14 +4,14 @@ const snippets = [
     title: 'Tar a file/folder',
     description: 'Tar a file or folder on the command line',
     code: 'tar -zcvf filename.tar.gz foldername',
-    codeType: 'cli',
+    codeType: 'bash',
   },
   {
     slug: 'run-composer-without-memory-limit',
     title: 'Run Composer without a memory limit',
     description: '',
     code: 'php -d memory_limit=-1 /usr/local/bin/composer install',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['php', 'cli'],
   },
   {
@@ -19,7 +19,7 @@ const snippets = [
     title: 'cURL File',
     description: 'Download file to location in Terminial using cURL',
     code: 'curl -O www.devools.com/examplefile.zip',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['curl', 'cli'],
   },
   {
@@ -27,7 +27,7 @@ const snippets = [
     title: 'Untar a file/folder',
     description: 'Untar a tar.gz folder in the same directory',
     code: 'tar xvf filename.tar.gz',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['tar', 'cli'],
   },
   {
@@ -35,7 +35,7 @@ const snippets = [
     title: 'Remove a directory and all sub directories - Bash Commands',
     description: 'Force remove a directory and all sub directories',
     code: 'rm -f -r foldername',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['linux', 'cli'],
   },
   {
@@ -44,7 +44,7 @@ const snippets = [
     description:
       'Changing file/folder ownership can be done via running the chown command on the command line.',
     code: 'chown user -R foldername',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['linux', 'cli'],
   },
   {
@@ -77,7 +77,7 @@ const snippets = [
     </li>
   </ol>`,
     code: 'find /directory -type f -size +sizek -exec ls -lh {} \\; | awk \'{ print $9 ": " $5 }\'',
-    codeType: 'cli',
+    codeType: 'bash',
   },
   {
     slug: 'creating-repo-svn',
@@ -94,7 +94,7 @@ cd /etc/httpd/vhosts/active/
 cp othersite.conf reponame.conf
 /etc/init.d/httpd configtest // ensure logs exist
 /etc/init.d/httpd restart`,
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['cli', 'svn'],
   },
   {
@@ -107,7 +107,7 @@ adduser USERNAME
 passwd USERNAME
 usermod -d DirectoryPath USERNAME
 vi /etc/vsftpd/chroot_list`,
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['cli', 'ftp', 'vsftpd'],
   },
   {
@@ -135,8 +135,8 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]`,
     title: 'Update host files on a Mac',
     description: 'Update the host file on a Mac for domain resolution control.',
     code: 'sudo nano /private/etc/hosts',
-    codeType: 'cli',
-    categories: ['cli', 'mac', 'bash'],
+    codeType: 'bash',
+    categories: ['cli', 'bash'],
   },
   {
     slug: 'flush-local-dns-on-mac',
@@ -155,8 +155,8 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]`,
 
     <p>Simply open the Terminal and run the appropriate command based on your Mac OS version to clear the DNS cache.</p>
     `,
-    codeType: 'cli',
-    categories: ['cli', 'mac', 'bash'],
+    codeType: 'bash',
+    categories: ['cli', 'bash'],
   },
   {
     slug: 'copy-a-trunk-to-branch',
@@ -164,7 +164,7 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]`,
     description:
       'Copy code from a trunk branch to a feature branch in a version control system.',
     code: 'svn copy trunk/ file:///var/www/svn/nameofsite/branchname -m "your branchname"',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['svn', 'cli', 'git'],
   },
   {
@@ -202,7 +202,7 @@ service vsftpd restart
 useradd username
 passwd chosenpassword
 usermod -d / username`,
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['ftp', 'cli', 'linux', 'vsftpd'],
   },
   {
@@ -237,7 +237,7 @@ usermod -d / username`,
 box-sizing: border-box;
 }`,
     codeType: 'CSS',
-    categories: ['css', 'ie8+'],
+    categories: ['css'],
   },
   {
     slug: 'youtube-video-xml-using-oembed',
@@ -271,7 +271,7 @@ $title = $info->title;
   for i in $( ls ); do
       echo $i
   done`,
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['bash'],
   },
   {
@@ -279,7 +279,7 @@ $title = $info->title;
     title: 'Create a DB user',
     description: 'Create a user account in a database management system.',
     code: `CREATE USER 'username'@'%' IDENTIFIED BY 'password';`,
-    codeType: 'mysql',
+    codeType: 'SQL',
     categories: ['mysql'],
   },
   {
@@ -302,7 +302,7 @@ $ cat /etc/passwd | grep -i johndoe
 johndoe:x:10285:10285::/home/johndoe:/bin/bash
 $ userdel johndoe
 $ cat /etc/passwd | grep -i johndoe`,
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['linux', 'cli'],
     htmlContent: `<p>The 'psaserv' group is for plesk so the user can have access to the plesk files</p>`,
   },
@@ -312,7 +312,7 @@ $ cat /etc/passwd | grep -i johndoe`,
     description:
       'Change the file extensions of multiple files in a batch operation.',
     code: "for file in *.htm ; do mv $file `echo $file | sed 's/\\(.*\\).htm/\\1html/'` ; done",
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['linux', 'cli'],
   },
   {
@@ -336,7 +336,7 @@ return false;
   /* return true|false if an element exists */
   jQuery.fn.doesExist=function(){return jQuery(this).length>0;};`,
     codeType: 'jQuery',
-    categories: ['jquery', 'plugin'],
+    categories: ['jquery'],
   },
   {
     slug: 'enable-gzip-compression',
@@ -398,8 +398,8 @@ Header set Cache-Control "max-age=604800, proxy-revalidate"
       'Implement font smoothing techniques in CSS for better typography.',
     code: `-webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale; /* Firefox 25*/`,
-    codeType: 'CSS',
-    categories: ['css', 'firefox 25+'],
+    codeType: 'css',
+    categories: ['css'],
   },
   {
     slug: 'ssh-keep-alive',
@@ -460,7 +460,7 @@ ServerAliveCountMax 36`,
     description:
       'Use terminal commands to find the IP address of a website or domain.',
     code: 'nslookup www.google.com',
-    codeType: 'cli',
+    codeType: 'bash',
   },
   {
     slug: 'custom-fonts-not-rendering',
@@ -480,8 +480,8 @@ ServerAliveCountMax 36`,
     title: 'XAMPP MySQL Start from Command',
     description: 'Start the MySQL server in XAMPP from the command line.',
     code: 'sudo /Applications/XAMPP/xamppfiles/bin/mysql.server start',
-    codeType: 'cli',
-    categories: ['cli', 'mac', 'mysql'],
+    codeType: 'bash',
+    categories: ['cli', 'mysql'],
   },
   {
     slug: 'restore-google-chrome-light-skin-on-macos',
@@ -498,7 +498,7 @@ ServerAliveCountMax 36`,
     description:
       'Create a backup of a MySQL database to a file using mysqldump utility.',
     code: 'mysqldump -u USERNAME -p DBNAME > DBNAME.export.sql',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['cli', 'mysql'],
   },
   {
@@ -507,7 +507,7 @@ ServerAliveCountMax 36`,
     description:
       'Copy the SSH public key to the system clipboard for easy pasting.',
     code: 'pbcopy < ~/.ssh/id_rsa.pub',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['cli', 'ssh'],
   },
   {
@@ -516,7 +516,7 @@ ServerAliveCountMax 36`,
     description:
       'Remove local Git branches that do not have corresponding remote branches.',
     code: "git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d",
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git'],
   },
   {
@@ -535,7 +535,7 @@ const docker = [
     title: 'Get Environment Variables in Docker - Docker Commands',
     description: 'View environment variables in a Docker container',
     code: 'docker exec CONTAINER_ID /bin/sh -c /usr/bin/env',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['docker', 'cli'],
   },
 
@@ -544,7 +544,7 @@ const docker = [
     title: 'View Logs of a Docker Container - Docker Commands',
     description: 'Display the logs of a Docker container',
     code: 'docker logs CONTAINER_NAME_OR_ID',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['docker', 'cli'],
   },
 
@@ -553,7 +553,7 @@ const docker = [
     title: 'Open SSH in a Docker Container - Docker Commands',
     description: 'Access a shell inside a Docker container via SSH',
     code: 'docker exec -it CONTAINER_ID sh',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['docker', 'cli'],
   },
 
@@ -562,7 +562,7 @@ const docker = [
     title: 'List Docker Services - Docker Commands',
     description: 'List all services running in Docker',
     code: 'docker service ls',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['docker', 'cli'],
   },
 
@@ -571,7 +571,7 @@ const docker = [
     title: 'Prune All Docker Resources - Docker Commands',
     description: 'Remove all unused Docker resources from the system',
     code: 'docker system prune --all',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['docker', 'cli'],
   },
   {
@@ -580,8 +580,8 @@ const docker = [
       'Delete Containers, Images, and Volume Data - Docker-Compose Command',
     description: 'Stop the app, delete containers, images, and volume data.',
     code: 'docker-compose down --rmi all -v',
-    codeType: 'cli',
-    categories: ['docker', 'docker-compose', 'cli'],
+    codeType: 'bash',
+    categories: ['docker', 'cli'],
   },
 ];
 
@@ -590,7 +590,7 @@ const sqlSnippets = [
     slug: 'migrate-db-sql-commands',
     title: 'Migrate Database - SQL Commands',
     description: 'Instructions to migrate a database using SQL commands.',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['database', 'sql'],
     steps: [
       {
@@ -616,7 +616,7 @@ const sqlSnippets = [
     slug: 'setup-htaccess-sql-commands',
     title: 'Setup .htaccess - SQL Commands',
     description: 'Instructions to set up .htaccess using SQL commands.',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['web', 'htaccess', 'sql'],
     steps: [
       {
@@ -629,8 +629,8 @@ const sqlSnippets = [
     slug: 'transfer-uploads-sql-commands',
     title: 'Transfer Uploads - SQL Commands',
     description: 'Instructions to transfer uploads using SQL commands.',
-    codeType: 'cli',
-    categories: ['file-transfer', 'sql'],
+    codeType: 'sql',
+    categories: ['sql'],
     steps: [
       {
         title: 'Tar Uploads',
@@ -655,7 +655,7 @@ const sqlSnippets = [
     title: 'Create Database and User - SQL Commands',
     description:
       'Instructions to create a database and user using SQL commands.',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['database', 'sql'],
     steps: [
       {
@@ -703,7 +703,7 @@ const gitCommands = [
     title: 'Reset to Master Branch Locally - Git Command',
     description: 'Instructions to reset to the master branch locally in Git.',
     code: 'git branch | grep -v "master" | xargs git branch -D',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
   {
@@ -711,7 +711,7 @@ const gitCommands = [
     title: 'Revert Specific Commits - Git Command',
     description: 'Instructions to revert specific commits in Git.',
     code: 'git revert SHA1 SHA2 SHA3', // Placeholder for commit SHA values
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
   {
@@ -719,7 +719,7 @@ const gitCommands = [
     title: 'Revert Last Two Commits - Git Command',
     description: 'Instructions to revert the last two commits in Git.',
     code: 'git revert HEAD~2..HEAD',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
   {
@@ -728,7 +728,7 @@ const gitCommands = [
     description:
       'Instructions to revert a range of commits in Git using commit hashes.',
     code: 'git revert SHA1..SHA2', // Placeholder for commit SHA values
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
   {
@@ -737,7 +737,7 @@ const gitCommands = [
     description:
       'Instructions to revert a merge commit in Git using a specific merge commit SHA.',
     code: 'git revert -m 1 <merge_commit_sha>', // Placeholder for merge commit SHA value
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
   {
@@ -749,7 +749,7 @@ const gitCommands = [
       'git checkout SHA .', // Placeholder for commit SHA value
       'git commit',
     ],
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['git', 'version control'],
   },
 ];
@@ -760,7 +760,7 @@ const composerCommands = [
     title: 'Install Dependencies - Composer Command',
     description: 'Use Composer to install project dependencies.',
     code: 'composer install',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
   {
@@ -768,7 +768,7 @@ const composerCommands = [
     title: 'Update Dependencies - Composer Command',
     description: 'Use Composer to update project dependencies.',
     code: 'composer update',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
   {
@@ -777,7 +777,7 @@ const composerCommands = [
     description:
       'Use Composer to require a new package and add it to the composer.json file.',
     code: 'composer require vendor/package',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
   {
@@ -786,7 +786,7 @@ const composerCommands = [
     description:
       'Use Composer to remove a package and update the composer.json file.',
     code: 'composer remove vendor/package',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
   {
@@ -794,7 +794,7 @@ const composerCommands = [
     title: 'Show Package Versions - Composer Command',
     description: 'Use Composer to list available versions of a package.',
     code: 'composer show vendor/package --all | grep versions',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
   {
@@ -803,7 +803,7 @@ const composerCommands = [
     description:
       'Use Composer to update Composer itself to the latest version.',
     code: 'composer self-update',
-    codeType: 'cli',
+    codeType: 'bash',
     categories: ['composer', 'dependency management'],
   },
 ];

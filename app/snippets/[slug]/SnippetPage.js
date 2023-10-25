@@ -2,8 +2,17 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import Code from '@/components/Code';
+import Steps from '@/components/Steps';
 
-const SnippetPage = ({ title, description, htmlContent, code, codeType }) => {
+const SnippetPage = ({
+  title,
+  description,
+  htmlContent,
+  code,
+  codeType,
+  steps,
+}) => {
   return (
     <div className="container min-h-screen px-5">
       <div className="lg:w-2/3">
@@ -40,10 +49,13 @@ const SnippetPage = ({ title, description, htmlContent, code, codeType }) => {
           <>
             <h2 className="text-2xl font-bold">Code</h2>
             <div className="my-5">
-              <pre className="language-bash">
-                <code className="language-bash">{code}</code>
-              </pre>
+              <Code language={codeType} code={code} />
             </div>
+          </>
+        )}
+        {steps && (
+          <>
+            <Steps steps={steps} />
           </>
         )}
         {htmlContent && (

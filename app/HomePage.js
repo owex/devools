@@ -8,6 +8,7 @@ import PasswordGenerator from '@/components/widgets/PasswordGenerator';
 import PixelTo from '@/components/widgets/PixelTo';
 import StripTags from '@/components/widgets/StripTags';
 import ColourManager from '@/components/widgets/ColourManager';
+import ListGenerator from '@/components/widgets/ListGenerator';
 
 const HomePage = (props) => {
   return (
@@ -29,6 +30,7 @@ const HomePage = (props) => {
               title="Colour Manager"
               text="Generate a colour palette and RGBA from a hex colour."
             />
+            <ListGenerator title="HTML List Generator" />
           </div>
           <div className="flex flex-col gap-y-5 w-full xl:w-3/12">
             <PixelTo

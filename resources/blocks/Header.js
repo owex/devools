@@ -19,6 +19,7 @@ const NavigationItem = ({
   return (
     <div>
       <div
+        title="Toggle Dark Mode"
         className={classNames(
           'flex items-center justify-center leading-none text-sm hover:text-gray-800 dark:hover:text-primary',
           {

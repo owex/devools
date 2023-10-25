@@ -6,6 +6,10 @@ export const formattedSnippets = snippets.map((snippet) => ({
   id: `snippet-${snippet.slug}`,
 }));
 
-export const types = [
+export const tags = [
   ...new Set(snippets.flatMap((snippet) => snippet.categories)),
+].sort((a, b) => a.localeCompare(b));
+
+export const codeTypes = [
+  ...new Set(snippets.map((snippet) => snippet.codeType)),
 ].sort((a, b) => a.localeCompare(b));

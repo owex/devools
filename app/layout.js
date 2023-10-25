@@ -35,7 +35,11 @@ const Layout = ({ children }) => {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
           rel="stylesheet"
@@ -48,7 +52,7 @@ const Layout = ({ children }) => {
         )}
       </head>
       <body className="bg-white dark:bg-gray-900 text-black dark:text-gray-100">
-        <div className="flex flex-col min-h-screen justify-between">
+        <div className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />

@@ -117,7 +117,7 @@ vi /etc/vsftpd/chroot_list`,
       'Configure Apache to automatically redirect requests to the WWW subdomain.',
     code: `RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]`,
-    codeType: 'Apache',
+    codeType: 'apache',
     categories: ['apache', 'cli', 'linux'],
   },
   {
@@ -127,7 +127,7 @@ RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]`,
     code: `RewriteCond %{REQUEST_FILENAME} !-d
 # Externally redirect to remove trailing slash
 RewriteRule ^(.+)/$ /$1 [R=301,L]`,
-    codeType: 'Apache',
+    codeType: 'apache',
     categories: ['apache', 'cli', 'linux'],
   },
   {
@@ -173,7 +173,7 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]`,
     description:
       'Extract and match the last word in a string after a specified delimiter.',
     code: '.*DELIMITER(.*)',
-    codeType: 'Regular Expressions',
+    codeType: 'regex',
     categories: ['regex'],
   },
   {
@@ -211,7 +211,7 @@ usermod -d / username`,
     description:
       'Change file permissions recursively for directories only in a Unix-like environment.',
     code: 'find /DIRECTORY -type d -exec chmod 755 {} ;',
-    codeType: 'Unix Command',
+    codeType: 'bash',
     htmlContent: `
     <p>Adjust -type d to -type f to target files exclusively</p>
     `,
@@ -223,7 +223,7 @@ usermod -d / username`,
     description:
       'Change file permissions recursively for files only in a Unix-like environment.',
     code: 'find /DIRECTORY -type f -exec chmod 644 {} ;',
-    codeType: 'Unix Command',
+    codeType: 'bash',
     categories: ['unix', 'cli'],
   },
   {
@@ -279,7 +279,7 @@ $title = $info->title;
     title: 'Create a DB user',
     description: 'Create a user account in a database management system.',
     code: `CREATE USER 'username'@'%' IDENTIFIED BY 'password';`,
-    codeType: 'SQL',
+    codeType: 'sql',
     categories: ['mysql'],
   },
   {
@@ -489,8 +489,8 @@ ServerAliveCountMax 36`,
     description:
       'Switch back to the light skin theme in Google Chrome on MacOS.',
     code: 'defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool yes',
-    codeType: 'Browser Configuration',
-    categories: ['browser', 'chrome', 'macos'],
+    codeType: 'bash',
+    categories: ['chrome', 'macos'],
   },
   {
     slug: 'dump-mysql-database-to-file-using-mysqldump',

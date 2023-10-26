@@ -8,6 +8,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     // Will be available on both server and client,
     site_url: process.env.SITE_URL,
+    gtm_id: process.env.GTM_ID,
   },
   i18n: {
     locales: ['en'],

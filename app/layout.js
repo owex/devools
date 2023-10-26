@@ -13,6 +13,7 @@ export const metadata = {
   title: {
     template: '%s | Devools',
   },
+  metadataBase: new URL(publicRuntimeConfig?.site_url || 'https://devools.com'),
 };
 
 const Layout = ({ children }) => {

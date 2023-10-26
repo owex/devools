@@ -9,6 +9,12 @@ const { publicRuntimeConfig } = getConfig();
 import Header from '@/blocks/Header';
 import Footer from '@/blocks/Footer';
 
+export const metadata = {
+  title: {
+    template: '%s | Devools',
+  },
+};
+
 const Layout = ({ children }) => {
   const { site_url = '' } = publicRuntimeConfig;
 

@@ -38,7 +38,11 @@ export async function generateMetadata({ params, searchParams }, parent) {
   }
 
   return {
-    title: `${data?.title || ''} | Snippets | Devools`,
+    title: `${data?.title || ''} | Snippets `,
     description: data?.description || '',
+    openGraph: {
+      title: `${data?.title || ''} | Snippets `,
+      description: data?.description || '',
+    },
   };
 }

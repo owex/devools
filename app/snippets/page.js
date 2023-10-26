@@ -3,8 +3,12 @@ import SnippetsPage from './SnippetsPage';
 
 // either Static metadata
 export const metadata = {
-  title: 'Snippets | Devools',
+  title: 'Snippets ',
   description: 'A collection of code snippets for developers.',
+  openGraph: {
+    title: 'Snippets ',
+    description: 'A collection of code snippets for developers.',
+  },
 };
 
 export default async function Page({ params }) {

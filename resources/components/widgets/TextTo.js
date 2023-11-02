@@ -10,7 +10,7 @@ import WidgetLayout from '@/components/widgets/WidgetLayout';
 const TextTo = ({
   title = 'Text Formatter',
   titleAsHeading = '',
-  text = 'Convert text to a URL sluf or Kebab/Snake/Camel case',
+  text = 'Convert text to a URL slug or Kebab/Snake/Camel case and more!',
 }) => {
   const [mode, setMode] = useState('slugify');
   const [input, setInput] = useState('');
@@ -36,33 +36,83 @@ const TextTo = ({
     return result;
   }
 
+  const camelCaseWords = (string) => {
+    return [...string.trim().toLowerCase().split(' ')]
+      .map((str, index) => {
+        if (index === 0) {
+          return `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
+        }
+
+        return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
+      })
+      .join(' ');
+  };
+
+  const pascalCaseWords = (string) => {
+    return [...string.trim().toLowerCase().split(' ')]
+      .map((str, index) => {
+        return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
+      })
+      .join(' ');
+  };
+
   const formatString = (string, mode) => {
     const isSlugify = mode === 'slugify';
     const isCamelCase = mode === 'camelcase';
-    const isStudlyCaps = mode === 'studlycaps';
+    const isPascalCase = mode === 'pascalcase';
     const isSentenceCase = mode === 'sentencecase';
     const isKebabCase = mode === 'kebabcase';
     const isSnakeCase = mode === 'snakecase';
+    const isFlatCase = mode === 'flatcase';
+    const isUpperFlatCase = mode === 'upperflatcase';
+    const isPascalSnakeCase = mode === 'pascalsnakecase';
+    const isCamelSnakeCase = mode === 'camelsnakecase';
+    const isSceamingSnakeCase = mode === 'screamingsnakecase';
+    const isTrainCase = mode === 'traincase';
+    const isCobolCase = mode === 'cobolcase';
 
-    if (isCamelCase || isStudlyCaps) {
-      return [...string.trim().toLowerCase().split(' ')]
-        .map((str, index) => {
-          if (index === 0 && isCamelCase) {
-            return `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
-          }
+    if (isPascalCase) {
+      return pascalCaseWords(string).replace(/\s/g, '');
+    }
 
-          return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
-        })
-        .join(' ')
-        .replace(/\s/g, '');
+    if (isCamelCase) {
+      return camelCaseWords(string).replace(/\s/g, '');
+    }
+
+    if (isCamelSnakeCase) {
+      return camelCaseWords(string).replace(/\s/g, '_');
     }
 
     if (isSnakeCase) {
       return string.toLowerCase().split(' ').join('_');
     }
 
+    if (isSceamingSnakeCase) {
+      return string.toUpperCase().split(' ').join('_');
+    }
+
     if (isKebabCase) {
       return string.split(' ').join('-');
+    }
+
+    if (isFlatCase) {
+      return string.toLowerCase().split(' ').join('');
+    }
+
+    if (isUpperFlatCase) {
+      return string.toUpperCase().split(' ').join('');
+    }
+
+    if (isPascalSnakeCase) {
+      return pascalCaseWords(string).split(' ').join('_');
+    }
+
+    if (isTrainCase) {
+      return pascalCaseWords(string).replace(/\s/g, '-');
+    }
+
+    if (isCobolCase) {
+      return pascalCaseWords(string).replace(/\s/g, '-').toUpperCase();
     }
 
     if (isSentenceCase) {
@@ -94,7 +144,7 @@ const TextTo = ({
         title={title}
         titleAsHeading={titleAsHeading}
         text={text}
-        page="/tools/text-to"
+        page="/tools/text-formatter"
       >
         <div className="flex flex-col gap-y-2 mb-2">
           <Input
@@ -113,27 +163,55 @@ const TextTo = ({
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {[
             {
-              text: 'slugify',
-              mode: 'slugify',
-            },
-            {
-              text: 'Sentence Case',
-              mode: 'sentencecase',
+              text: 'PascalCase',
+              mode: 'pascalcase',
             },
             {
               text: 'camelCase',
               mode: 'camelcase',
             },
             {
-              text: 'StudlyCaps',
-              mode: 'studlycaps',
+              text: 'kebab-case',
+              mode: 'slugify',
             },
             {
               text: 'Snake_Case',
               mode: 'snakecase',
+            },
+            {
+              text: 'flatcase',
+              mode: 'flatcase',
+            },
+            {
+              text: 'UPPERFLATCASE',
+              mode: 'upperflatcase',
+            },
+            {
+              text: 'Pascal_Snake_Case',
+              mode: 'pascalsnakecase',
+            },
+            {
+              text: 'camel_Snake_Case',
+              mode: 'camelsnakecase',
+            },
+            {
+              text: 'SCREAMING_SNAKE_CASE',
+              mode: 'screamingsnakecase',
+            },
+            {
+              text: 'Train-Case',
+              mode: 'traincase',
+            },
+            {
+              text: 'COBOL-CASE',
+              mode: 'cobolcase',
+            },
+            {
+              text: 'Sentence Case',
+              mode: 'sentencecase',
             },
           ].map((option) => (
             <Button

@@ -133,7 +133,7 @@ const Footer = (props) => {
               </div>
               <div>
                 <p className="text-xs leading-5 text-gray-500 dark:text-white">
-                  &copy; {new Date().getFullYear()} TabbyPro. All rights
+                  &copy; {new Date().getFullYear()} Devools. All rights
                   reserved.
                 </p>
               </div>

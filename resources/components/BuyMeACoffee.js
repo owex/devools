@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 
 import React from 'react';
@@ -18,7 +20,7 @@ const BuyMeACoffee = () => {
     script.setAttribute('data-description', 'Support me on Buy me a coffee!');
     script.setAttribute(
       'data-message',
-      'Help Support Norwich Parking by buying me a coffee!'
+      'Help Support Devools by buying me a coffee!'
     );
     script.setAttribute('data-color', '#5F7FFF');
     script.setAttribute('data-position', 'Right');

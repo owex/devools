@@ -51,12 +51,12 @@ const Footer = (props) => {
         https://devools.com
       </div>
       <footer
-        className="bg-white dark:bg-gray-800 print:hidden"
+        className="mt-10 bg-white dark:bg-gray-800 print:hidden"
         aria-labelledby="footer-heading"
       >
-        <h2 id="footer-heading" className="sr-only">
+        <p id="footer-heading" className="sr-only">
           Footer
-        </h2>
+        </p>
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-10 sm:pt-24 lg:px-8 lg:pt-32">
           <div className="flex w-full">
             <div className="w-full lg:w-2/3">

@@ -9,6 +9,7 @@ const { publicRuntimeConfig } = getConfig();
 
 import Header from '@/blocks/Header';
 import Footer from '@/blocks/Footer';
+import BuyMeACoffee from '@/components/BuyMeACoffee';
 
 export const metadata = {
   title: {
@@ -82,6 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         )}
         <div className="flex flex-col min-h-screen">
           <Header />
+          <BuyMeACoffee />
           {children}
           <Footer />
         </div>
